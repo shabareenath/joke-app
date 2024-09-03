@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+.joke-container {
+  text-align: center;
+  background-color: rgb(179, 204, 169);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+.dialogue {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+#newJokeButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 30px;
+
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+
+#newJokeButton:hover {
+  background-color:rgb(136, 209, 107);
+  color: black;
+}

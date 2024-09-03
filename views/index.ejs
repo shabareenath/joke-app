@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke Display</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="/">
+      <div class="joke-container">
+        <button id="newJokeButton">Get a New Joke</button>
+        <% if(locals.question && locals.answer){ %>
+        <div class="dialogue" id="dialogue1">
+          <h2><span style="color:green">Tom: </span> <%= question %></h2>
+        </div>
+        <div class="dialogue" id="dialogue2">
+          <h2><span style="color:green">Jerry: </span><%= answer %></h2>
+        </div>
+        <% }else{ %>
+        <h1>couldn't fetch the joke</h1>
+        <% } %>
+      </div>
+    </form>
+  </body>
+</html>
